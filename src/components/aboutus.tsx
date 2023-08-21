@@ -5,7 +5,9 @@ const AboutUs = () => {
       className="px-10 min-h-screen flex flex-col justify-center items-center"
     >
       <div>
-        <h1 className="text-red-400 mb-3">About Us</h1>
+        <h1 className="text-[#E11556] text-4xl font-extrabold mb-3 underline decoration-[#32BCE7] decoration-500 decoration-4">
+          About Us
+        </h1>
         <img />
         <p className="mb-3">
           <strong>Sounds Super</strong> specialise in producing entertainment
@@ -19,7 +21,7 @@ const AboutUs = () => {
           excitement, or anything in between.
         </p>
         <p className="mb-3">
-          We believe that both podcast audio and socal video are powerful and
+          We believe that both podcast audio and social video are powerful and
           personal mediums that speak directly to people. And they work
           phenomenally well together - like salt on popcorn or Ant & Dec.
         </p>
