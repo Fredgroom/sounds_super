@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <section>
+    <>
       <h1 className="text-red-400">Work</h1>
       <p>
         We focus on creating content that is engaging and entertaining. We want
@@ -17,7 +17,7 @@ const Work = () => {
         BBC Studios / Tom Kerridge / Nokia / Brand pilot / SBAI / BBC Sounds /
         Radio 1 / Radio 2 / 6 Music / american ones tbc
       </p>
-    </section>
+    </>
   );
 };
 

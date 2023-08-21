@@ -7,11 +7,21 @@ import Work from "./components/work";
 const App = () => {
   return (
     <main className="min-h-screen relative bg-gradient-to-r from-white-800 to-white-950 text-black flex flex-col">
-      <AboutUs />
-      <Work />
-      <Services />
-      <Team />
-      <Contact />
+      <section>
+        <AboutUs />
+      </section>
+      <section>
+        <Work />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section>
+        <Team />
+      </section>
+      <section>
+        <Contact />
+      </section>
     </main>
   );
 };

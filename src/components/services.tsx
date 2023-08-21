@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section>
+    <>
       <h1 className="text-red-400">Services</h1>
       <p>
         We offer a wide range of services to help you create engaging and
@@ -47,7 +47,7 @@ const Services = () => {
         inspires. We'll work with you to bring your vision to life and{" "}
         <strong>create something worth sharing</strong>.
       </p>
-    </section>
+    </>
   );
 };
 

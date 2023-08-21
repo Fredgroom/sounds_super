@@ -1,6 +1,8 @@
+import founderImage from "../assets/founder_photo.jpg";
+
 const Team = () => {
   return (
-    <section>
+    <>
       <h1>Team</h1>
       <p>
         We work with talented freelance writers, presenters, and producers to
@@ -8,9 +10,11 @@ const Team = () => {
         best possible product, and we work with the best people in the business
         to make that happen.
       </p>
+      <img src={founderImage}></img>
       <p>
-        Jonathan O'Sullivan is the founder and director of Sounds Super. He is a
-        podcast producer with over a decade of experience in the audio industry.
+        <span>Founder and Executive Producer</span>Jonathan O'Sullivan is the
+        founder and director of Sounds Super. He is a podcast producer with over
+        a decade of experience in the audio industry.
       </p>
       <p>
         Jonathan has worked on a wide range of projects, including The Strictly
@@ -30,7 +34,7 @@ const Team = () => {
         <li>Featured in The New York Times, The Guardian, and Wired</li>
         <li>His work has been downloaded over 5 million times</li>
       </ul>
-    </section>
+    </>
   );
 };
 

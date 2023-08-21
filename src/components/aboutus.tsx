@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <section>
+    <>
       <h1 className="text-red-400">About Us</h1>
       <img />
       <p>
@@ -25,7 +25,7 @@ const AboutUs = () => {
         taking a backstage tour of Strictly with Joe Sugg on Tik-Tok before bed…
         <strong>our audience is always part of the story.</strong>
       </p>
-    </section>
+    </>
   );
 };
 
