@@ -7,7 +7,7 @@ import Work from "./components/work";
 
 const App = () => {
   return (
-    <main className="min-h-screen  bg-gradient-to-r bg-[#F5F4F4] text-black flex flex-col">
+    <main className="min-h-screen  bg-gradient-to-r text-black flex flex-col">
       <Video />
       <AboutUs />
       <Work />
