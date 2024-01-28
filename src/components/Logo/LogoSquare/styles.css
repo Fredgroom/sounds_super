@@ -1,0 +1,87 @@
+@keyframes rotatingAnimation1 {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(112.5deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(247.5deg);
+  }
+  100% {
+    transform: rotate(315deg);
+  }
+}
+@keyframes rotatingAnimation2 {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotatingAnimation3 {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(67.5deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(112.5deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotatingAnimation4 {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+.rotatingDiv1 {
+  animation-name: rotatingAnimation1;
+}
+.rotatingDiv2 {
+  animation-name: rotatingAnimation2;
+}
+.rotatingDiv3 {
+  animation-name: rotatingAnimation3;
+}
+.rotatingDiv4 {
+  animation-name: rotatingAnimation4;
+}
+
+.rotatingDiv {
+  animation-duration: 5s;
+  animation-fill-mode: initial;
+  animation-iteration-count: infinite;
+}
