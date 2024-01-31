@@ -1,11 +1,21 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import LogoSquare from './LogoSquare';
 
 interface LogoProps {
   size?: number;
 }
 
-const Logo: FC<LogoProps> = ({ size = 400 }) => {
+const Logo: FC<LogoProps> = ({ size = 300 }) => {
+  const [finalSize, setFinalSize] = useState(size);
+
+  useEffect(() => {
+    window.innerWidth <= 425
+      ? setFinalSize(window.innerWidth * 0.7)
+      : window.innerWidth <= 1152
+      ? setFinalSize(window.innerWidth * 0.7)
+      : setFinalSize(600);
+  }, [window.innerWidth]);
+
   return (
     <div>
       <div
@@ -23,10 +33,10 @@ const Logo: FC<LogoProps> = ({ size = 400 }) => {
             position: 'relative',
           }}
         >
-          <LogoSquare backgroundColor='#E11556' number={1} size={size} />
-          <LogoSquare backgroundColor='#E11556' number={2} size={size} />
-          <LogoSquare backgroundColor='#32BCE7' number={3} size={size} />
-          <LogoSquare backgroundColor='#32BCE7' number={4} size={size} />
+          <LogoSquare backgroundColor='#E11556' number={1} size={finalSize} />
+          <LogoSquare backgroundColor='#E11556' number={2} size={finalSize} />
+          <LogoSquare backgroundColor='#32BCE7' number={3} size={finalSize} />
+          <LogoSquare backgroundColor='#32BCE7' number={4} size={finalSize} />
         </div>
         <div
           style={{
@@ -37,13 +47,13 @@ const Logo: FC<LogoProps> = ({ size = 400 }) => {
         >
           <h1
             style={{
-              width: size / 1.8,
+              width: finalSize / 1.8,
               color: 'white',
 
               textAlign: 'center',
               backgroundColor: 'transparent',
               zIndex: 99999,
-              fontSize: `${size / 6}px`,
+              fontSize: `${finalSize / 6}px`,
               wordBreak: 'break-word',
             }}
           >

@@ -1,25 +1,43 @@
-import { useRef, useState } from 'react';
-import Menu from '../Menu';
-
 const Nav = () => {
-  const [showMenu, setShowMenu] = useState(true);
-  const windowWidth = useRef();
   return (
-    <div
-      ref={windowWidth}
-      className=' p-2 md:p-4 fixed bg-transparent flex w-full justify-end'
-    >
-      <div className='p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] w-full flex justify-end'>
-        {!showMenu && <p onClick={() => setShowMenu(true)}>X</p>}
-        {!!showMenu && (
-          <div className='w-full'>
-            <Menu />
-            <p onClick={() => setShowMenu(false)}>close</p>
-          </div>
-        )}
-      </div>
-    </div>
+    <nav className='flex flex-col md:flex-row '>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#video'
+      >
+        home
+      </a>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#about-us'
+      >
+        about us
+      </a>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#work'
+      >
+        work
+      </a>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#services'
+      >
+        services
+      </a>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#team'
+      >
+        team
+      </a>
+      <a
+        className='px-2 text-[#E11556] font-extrabold cursor-pointer'
+        href='#contact'
+      >
+        contact us
+      </a>
+    </nav>
   );
 };
-
 export default Nav;

@@ -1,5 +1,6 @@
 // import video from "../assets/sounds_super.mp4";
-import gif from '../../assets/sounds_super.gif';
+// import gif from '../../assets/sounds_super.gif';
+import Logo from '../Logo';
 import Section from '../Section';
 import SectionContainer from '../SectionContainer';
 
@@ -25,7 +26,8 @@ const Video = () => {
         type="video/mp4"
         />
       </video> */}
-        <img src={gif} className='min-w-[500px]' />
+        {/* <img src={gif} className='min-w-[500px]' /> */}
+        <Logo size={600} />
       </SectionContainer>
     </Section>
   );

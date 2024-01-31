@@ -31,7 +31,7 @@ const LogoSquare: FC<LogoSquareProps> = ({
         position: 'absolute',
         width: `${size}px`,
         height: `${size}px`,
-        left: -(size / 4),
+        left: -(size / 4.5),
         backgroundColor: backgroundColor,
         opacity: '.95',
         rotate: '45deg',
