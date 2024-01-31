@@ -1,17 +1,13 @@
 import { FC, useEffect, useState } from 'react';
 import Nav from '../Nav';
 
-interface MenuLineProps {
-  rotate?: string;
-}
-const MenuLine: FC<MenuLineProps> = ({ rotate }) => {
+const MenuLine: FC = () => {
   return (
     <div
       style={{
         width: '24px',
         height: '2px',
         backgroundColor: '#E11556',
-        transform: `rotate(${rotate}deg)`,
       }}
     />
   );
@@ -45,14 +41,33 @@ const MenuClose: FC<MenuCloseProps> = ({ func }) => {
     <div
       style={{
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        height: '16px',
+        position: 'relative',
+        height: '24px',
+        width: '24px',
+        cursor: 'pointer',
       }}
       onClick={func}
     >
-      <MenuLine rotate='45' />
-      <MenuLine rotate='-45' />
+      <div
+        style={{
+          width: '24px',
+          height: '2px',
+          backgroundColor: '#E11556',
+          position: 'absolute',
+          top: '10px',
+          transform: 'rotate(45deg)',
+        }}
+      />
+      <div
+        style={{
+          width: '24px',
+          height: '2px',
+          backgroundColor: '#E11556',
+          position: 'absolute',
+          top: '10px',
+          transform: 'rotate(-45deg)',
+        }}
+      />
     </div>
   );
 };
@@ -79,19 +94,11 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className='p-2 md:p-4 fixed bg-transparent flex justify-end w-full max-w-6xl'>
+    <div className='p-2 md:p-4 fixed bg-transparent flex justify-end w-full max-w-6xl z-10'>
       <div
         className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex `}
       >
-        {!showMenu && (
-          // <p
-          //   className='cursor-pointer text-[#E11556]'
-          //   onClick={() => setShowMenu(true)}
-          // >
-          //   open
-          // </p>
-          <MenuOpen func={() => setShowMenu(true)} />
-        )}
+        {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
         {!!showMenu && (
           <div
             className={`${
@@ -100,12 +107,6 @@ const Menu = () => {
           >
             <Nav />
             {windowSize.width <= 425 && (
-              // <p
-              //   className='px-1 text-[#E11556] cursor-pointer'
-              //   onClick={() => setShowMenu(false)}
-              // >
-              //   close
-              // </p>
               <MenuClose func={() => setShowMenu(false)} />
             )}
           </div>

@@ -7,14 +7,39 @@ interface LogoProps {
 
 const Logo: FC<LogoProps> = ({ size = 300 }) => {
   const [finalSize, setFinalSize] = useState(size);
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   useEffect(() => {
-    window.innerWidth <= 425
-      ? setFinalSize(window.innerWidth * 0.7)
-      : window.innerWidth <= 1152
-      ? setFinalSize(window.innerWidth * 0.7)
-      : setFinalSize(600);
-  }, [window.innerWidth]);
+    const handleResize = () => {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const ifSmallHeight = () => {
+    if (window.innerHeight < window.innerWidth) {
+      window.innerHeight < size / Math.sqrt(2) &&
+        setFinalSize(window.innerHeight / Math.sqrt(2));
+    } else {
+      window.innerWidth <= 425
+        ? setFinalSize(window.innerWidth / Math.sqrt(2))
+        : window.innerWidth <= 1152
+        ? setFinalSize(window.innerWidth / Math.sqrt(2))
+        : setFinalSize(600);
+    }
+  };
+
+  useEffect(() => {
+    ifSmallHeight();
+    console.log('window.innerWidth', window.innerWidth);
+    console.log('window.innerHeight', window.innerHeight);
+  }, [windowSize]);
 
   return (
     <div>
@@ -49,10 +74,9 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
             style={{
               width: finalSize / 1.8,
               color: 'white',
-
               textAlign: 'center',
               backgroundColor: 'transparent',
-              zIndex: 99999,
+              zIndex: 1,
               fontSize: `${finalSize / 6}px`,
               wordBreak: 'break-word',
             }}
