@@ -6,7 +6,7 @@ const MenuLine: FC = () => {
     <div
       style={{
         width: '24px',
-        height: '2px',
+        height: '3px',
         backgroundColor: '#E11556',
       }}
     />
@@ -19,17 +19,22 @@ interface MenuOpenProps {
 const MenuOpen: FC<MenuOpenProps> = ({ func }) => {
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        height: '16px',
-      }}
-      onClick={func}
+      className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex cursor-pointer`}
     >
-      <MenuLine />
-      <MenuLine />
-      <MenuLine />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          height: '16px',
+          cursor: 'pointer',
+        }}
+        onClick={func}
+      >
+        <MenuLine />
+        <MenuLine />
+        <MenuLine />
+      </div>
     </div>
   );
 };
@@ -51,7 +56,7 @@ const MenuClose: FC<MenuCloseProps> = ({ func }) => {
       <div
         style={{
           width: '24px',
-          height: '2px',
+          height: '3px',
           backgroundColor: '#E11556',
           position: 'absolute',
           top: '10px',
@@ -61,7 +66,7 @@ const MenuClose: FC<MenuCloseProps> = ({ func }) => {
       <div
         style={{
           width: '24px',
-          height: '2px',
+          height: '3px',
           backgroundColor: '#E11556',
           position: 'absolute',
           top: '10px',
@@ -95,23 +100,24 @@ const Menu = () => {
 
   return (
     <div className='p-2 md:p-4 fixed bg-transparent flex justify-end w-full max-w-6xl z-10'>
-      <div
-        className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex `}
-      >
-        {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
-        {!!showMenu && (
+      {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
+      {!!showMenu && (
+        <div
+          className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex`}
+        >
           <div
             className={`${
               windowSize.width <= 425 && 'w-full'
             }  flex justify-between`}
           >
             <Nav />
-            {windowSize.width <= 425 && (
+            {/* {windowSize.width <= 425 && (
               <MenuClose func={() => setShowMenu(false)} />
-            )}
+            )} */}
+            <MenuClose func={() => setShowMenu(false)} />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

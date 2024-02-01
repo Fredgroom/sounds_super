@@ -37,8 +37,6 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
 
   useEffect(() => {
     ifSmallHeight();
-    console.log('window.innerWidth', window.innerWidth);
-    console.log('window.innerHeight', window.innerHeight);
   }, [windowSize]);
 
   return (
@@ -78,6 +76,7 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
               backgroundColor: 'transparent',
               zIndex: 1,
               fontSize: `${finalSize / 6}px`,
+              lineHeight: `${(finalSize / 6) * 0.9}px`,
               wordBreak: 'break-word',
             }}
           >

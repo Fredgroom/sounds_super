@@ -8,7 +8,7 @@ import Work from './components/sections/work';
 
 const App = () => {
   return (
-    <main className='min-h-screen  bg-gradient-to-r text-black flex flex-col items-center overflow-hidden'>
+    <main className='min-h-screen  bg-gradient-to-r text-black flex flex-col w-full items-center overflow-hidden'>
       <Menu />
       <Video />
       <AboutUs />

@@ -45,10 +45,10 @@ const Work = () => {
           allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
           loading='lazy'
         ></iframe>
-        <br />
-        <p className='mb-3'>Ibiza cover</p>
         {/* <br /> */}
-        <iframe
+        {/* <p className='mb-3'>Ibiza cover</p> */}
+        {/* <br /> */}
+        {/* <iframe
           allow='autoplay *; encrypted-media *; fullscreen *; clipboard-write'
           height='175'
           width='100%'
@@ -60,12 +60,12 @@ const Work = () => {
           }}
           sandbox='allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation'
           src='https://embed.podcasts.apple.com/us/podcast/the-britpop-show-collaborations/id1547070771?i=1000643480931'
-        ></iframe>
+        ></iframe> */}
         {/* <p className='mb-3'>
           Strictly Podcast Cover / Pirate Ship Podcast Cover / Ibiza cover /
           britpop cover
         </p> */}
-        <p className='mb-3'>Some of our other happy customers…</p>
+        <p className='mt-3'>Some of our other happy customers…</p>
 
         <div className='flex justify-center'>
           <div className='flex flex-wrap justify-center w-full '>
