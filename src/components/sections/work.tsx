@@ -27,7 +27,7 @@ const Work = () => {
           want our listeners to be hooked from the start and to keep listening
           until the end.
         </p>
-        <h2 className='mb-3 '>Currently on rotation….</h2>
+        {/* <h2 className='mb-3 '>Currently on rotation….</h2>
         <iframe
           style={{ borderRadius: '12px' }}
           src='https://open.spotify.com/embed/episode/1IquyyXG3QjqNiAF399zeQ?utm_source=generator&theme=0'
@@ -44,7 +44,7 @@ const Work = () => {
           height='152'
           allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
           loading='lazy'
-        ></iframe>
+        ></iframe> */}
         {/* <br /> */}
         {/* <p className='mb-3'>Ibiza cover</p> */}
         {/* <br /> */}
