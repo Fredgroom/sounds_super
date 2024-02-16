@@ -3,15 +3,9 @@ import SectionContainer from '../SectionContainer';
 
 const AboutUs = () => {
   return (
-    <Section
-      id='about-us'
-      secondaryColor
-      // className='px-10 min-h-screen flex flex-col justify-center items-center w-full'
-    >
-      <SectionContainer
-      //  className='max-w-6xl'
-      >
-        <h1 className='text-[#E11556] text-4xl font-extrabold mb-3 underline decoration-[#32BCE7] decoration-500 decoration-4'>
+    <Section id='about-us' secondaryColor>
+      <SectionContainer>
+        <h1 className='text-red text-4xl font-extrabold mb-3 underline decoration-[#32BCE7] decoration-500 decoration-4'>
           About Us
         </h1>
         <img />

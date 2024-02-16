@@ -8,9 +8,9 @@ import Work from './components/sections/work';
 
 const App = () => {
   return (
-    <main className='min-h-screen  bg-gradient-to-r text-black flex flex-col w-full items-center overflow-hidden'>
+    <main className='min-h-screen  bg-gradient-to-r text-black flex flex-col w-full items-center overflow-hidden text-lg'>
       <Menu />
-      <Video />
+      <Video h-full />
       <AboutUs />
       <Work />
       <Services />

@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useState } from 'react';
 import Nav from '../Nav';
 
 const MenuLine: FC = () => {
@@ -7,8 +7,8 @@ const MenuLine: FC = () => {
       style={{
         width: '24px',
         height: '3px',
-        backgroundColor: '#E11556',
       }}
+      className='bg-red w-24 h-3'
     />
   );
 };
@@ -19,21 +19,17 @@ interface MenuOpenProps {
 const MenuOpen: FC<MenuOpenProps> = ({ func }) => {
   return (
     <div
-      className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex cursor-pointer`}
+      className={`p-3 bg-white border-4 border-blue flex cursor-pointer md:hidden`}
     >
       <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          height: '16px',
-          cursor: 'pointer',
-        }}
+        className={`flex flex-col align-center cursor-pointer h-[24px]`}
         onClick={func}
       >
-        <MenuLine />
-        <MenuLine />
-        <MenuLine />
+        <div className='flex flex-col items-between justify-between h-full'>
+          <MenuLine />
+          <MenuLine />
+          <MenuLine />
+        </div>
       </div>
     </div>
   );
@@ -43,81 +39,45 @@ interface MenuCloseProps {
 }
 const MenuClose: FC<MenuCloseProps> = ({ func }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        position: 'relative',
-        height: '24px',
-        width: '24px',
-        cursor: 'pointer',
-      }}
-      onClick={func}
-    >
+    <div className='flex'>
       <div
-        style={{
-          width: '24px',
-          height: '3px',
-          backgroundColor: '#E11556',
-          position: 'absolute',
-          top: '10px',
-          transform: 'rotate(45deg)',
-        }}
-      />
-      <div
-        style={{
-          width: '24px',
-          height: '3px',
-          backgroundColor: '#E11556',
-          position: 'absolute',
-          top: '10px',
-          transform: 'rotate(-45deg)',
-        }}
-      />
+        className={`flex justify-center self-end align-center relative cursor-pointer h-[26px] w-[24px]`}
+        onClick={func}
+      >
+        <div
+          className={`absolute top-[12px] w-[24px] h-[3px] bg-red rotate-[45deg]`}
+        />
+        <div
+          className={`absolute top-[12px] w-[24px] h-[3px] bg-red rotate-[-45deg]`}
+        />
+      </div>
     </div>
   );
 };
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    const updateWindowSize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-    window.addEventListener('resize', updateWindowSize);
-    return () => {
-      window.removeEventListener('resize', updateWindowSize);
-      windowSize.width >= 425 && setShowMenu(true);
-    };
-  }, []);
 
   return (
-    <div className='p-2 md:p-4 fixed bg-transparent flex justify-end w-full max-w-6xl z-10'>
-      {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
-      {!!showMenu && (
-        <div
-          className={`p-3 bg-[#fffefe] border-2 md:border-4 border-[#32BCE7] flex`}
-        >
+    <div className='fixed bg-transparent w-full p-2 md:p-4 flex justify-end z-10'>
+      <div className='flex w-full md:w-auto justify-end bg-transparent'>
+        {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
+        {!!showMenu && (
           <div
-            className={`${
-              windowSize.width <= 425 && 'w-full'
-            }  flex justify-between`}
+            className={`p-3 bg-white border-4 w-full md:hidden md:w-auto border-blue flex justify-between items-start`}
           >
-            <Nav />
-            {/* {windowSize.width <= 425 && (
-              <MenuClose func={() => setShowMenu(false)} />
-            )} */}
+            <div className='w-full flex justify-center'>
+              <Nav />
+            </div>
             <MenuClose func={() => setShowMenu(false)} />
           </div>
+        )}
+        <div
+          className={`hidden p-3 bg-white border-4 w-full md:border-4 md:w-auto border-blue md:flex justify-between items-start`}
+        >
+          <Nav />
         </div>
-      )}
+      </div>
     </div>
   );
 };

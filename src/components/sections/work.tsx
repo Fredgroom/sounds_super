@@ -19,7 +19,7 @@ const Work = () => {
       <SectionContainer
       // className='w-full max-w-6xl'
       >
-        <h1 className='text-[#E11556] text-4xl font-extrabold underline decoration-[#32BCE7] decoration-500 decoration-4'>
+        <h1 className='text-red text-4xl font-extrabold underline decoration-[#32BCE7] decoration-500 decoration-4'>
           Work
         </h1>
         <p className='mb-3'>

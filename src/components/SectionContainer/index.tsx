@@ -8,7 +8,7 @@ interface SectionContainerProps {
 const SectionContainer: FC<SectionContainerProps> = ({ children, center }) => {
   return (
     <div
-      className={`px-2.5 py-5 md:p-5 md:py-10 w-full max-w-6xl ${
+      className={`px-2.5 py-5 md:p-5 md:py-10 w-full max-w-6xl  ${
         center && `flex justify-center`
       }`}
     >

@@ -8,6 +8,7 @@ const Video = () => {
   return (
     <Section
       id='video'
+      fullHeight
       // className='min-h-screen flex flex-col justify-center items-center w-full'
     >
       <SectionContainer

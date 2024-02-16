@@ -23,14 +23,14 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
   }, []);
 
   const ifSmallHeight = () => {
-    if (window.innerHeight < window.innerWidth) {
-      window.innerHeight < size / Math.sqrt(2) &&
-        setFinalSize(window.innerHeight / Math.sqrt(2));
+    if (windowSize.height < windowSize.width) {
+      windowSize.height < size / Math.sqrt(2) &&
+        setFinalSize(windowSize.height / Math.sqrt(2));
     } else {
-      window.innerWidth <= 425
-        ? setFinalSize(window.innerWidth / Math.sqrt(2))
-        : window.innerWidth <= 1152
-        ? setFinalSize(window.innerWidth / Math.sqrt(2))
+      windowSize.width <= 425
+        ? setFinalSize(windowSize.width * 0.75)
+        : windowSize.width <= 1152
+        ? setFinalSize(windowSize.width / Math.sqrt(2))
         : setFinalSize(600);
     }
   };
