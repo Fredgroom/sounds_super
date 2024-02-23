@@ -59,23 +59,25 @@ const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className='fixed bg-transparent w-full p-2 md:p-4 flex justify-end z-10'>
-      <div className='flex w-full md:w-auto justify-end bg-transparent'>
-        {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
-        {!!showMenu && (
-          <div
-            className={`p-3 bg-white border-4 w-full md:hidden md:w-auto border-blue flex justify-between items-start`}
-          >
-            <div className='w-full flex justify-center'>
-              <Nav />
+    <div className='fixed bg-blue w-full p-2 md:p-4 flex justify-center z-10'>
+      <div className='w-full bg-transparent max-w-[1000px]'>
+        <div className='flex w-full md:w-auto justify-end bg-transparent'>
+          {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
+          {!!showMenu && (
+            <div
+              className={`p-3 bg-white border-4 w-full md:hidden md:w-auto border-blue flex justify-between items-start max-w-xl`}
+            >
+              <div className='w-full flex justify-center'>
+                <Nav />
+              </div>
+              <MenuClose func={() => setShowMenu(false)} />
             </div>
-            <MenuClose func={() => setShowMenu(false)} />
+          )}
+          <div
+            className={`hidden p-3 bg-white border-4 w-full md:border-4 md:w-auto border-blue md:flex justify-between items-start`}
+          >
+            <Nav />
           </div>
-        )}
-        <div
-          className={`hidden p-3 bg-white border-4 w-full md:border-4 md:w-auto border-blue md:flex justify-between items-start`}
-        >
-          <Nav />
         </div>
       </div>
     </div>
