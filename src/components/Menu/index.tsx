@@ -59,7 +59,7 @@ const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className='fixed bg-blue w-full p-2 md:p-4 flex justify-center z-10'>
+    <div className='fixed bg-blue w-full p-2 md:p-4 flex justify-center z-10 border-solid border-b-4 border-red'>
       <div className='w-full bg-transparent max-w-[1000px]'>
         <div className='flex w-full md:w-auto justify-end bg-transparent'>
           {!showMenu && <MenuOpen func={() => setShowMenu(true)} />}
