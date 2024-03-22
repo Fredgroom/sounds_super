@@ -2,7 +2,7 @@
 // import gif from '../../assets/sounds_super.gif';
 // import Logo from '../Logo';gst
 import Section from '../Section';
-import SectionContainer from '../SectionContainer';
+// import SectionContainer from '../SectionContainer';
 
 const Video = () => {
   return (
@@ -11,27 +11,28 @@ const Video = () => {
       fullHeight
       // className='min-h-screen flex flex-col justify-center items-center w-full'
     >
-      <SectionContainer
+      {/* <SectionContainer
         center
         // className='w-full max-w-6xl flex justify-center'
+      > */}
+      <video
+        muted
+        preload='auto'
+        autoPlay
+        loop
+        playsInline
+        className='aspect-square w-[100vw] md:pt-[94px] lg:max-w-[60vw]  max-h-[85vw]'
       >
-        <video
-          muted
-          preload='auto'
-          autoPlay
-          loop
-          className='w-full aspect-video pt-[94px]'
-        >
-          <source src='/reel.mp4' type='video/mp4' />
-        </video>
-        {/* <video width="320" height="240" controls>
+        <source src='/reel.mp4' type='video/mp4' />
+      </video>
+      {/* <video width="320" height="240" controls>
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video> */}
-        {/* <img src={gif} className='min-w-[500px]' /> */}
-        {/* <Logo size={600} /> */}
-      </SectionContainer>
+      {/* <img src={gif} className='min-w-[500px]' /> */}
+      {/* <Logo size={600} /> */}
+      {/* </SectionContainer> */}
     </Section>
   );
 };
