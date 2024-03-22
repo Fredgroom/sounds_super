@@ -25,7 +25,7 @@ const Video = () => {
       <iframe
         // src='https://player.vimeo.com/video/926228437?h=4e68b524b0&autoplay=1&loop=1&title=0&byline=0&portrait=0'
         src='https://player.vimeo.com/video/926228437?background=1'
-        className='aspect-square w-full max-h-[75vh] pt-[56px] lg:pt-[94px]'
+        className='aspect-square w-full max-h-[75vh] sm:pt-[56px] lg:pt-[94px]'
         allow='autoplay; background'
       ></iframe>
       <>
