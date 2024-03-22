@@ -15,20 +15,22 @@ const Video = () => {
         center
         // className='w-full max-w-6xl flex justify-center'
       >
-        {/* <video
-        muted
-        preload="auto"
-        autoPlay
-        loop
-        className="w-full aspect-video "
+        <video
+          muted
+          preload='auto'
+          autoPlay
+          loop
+          className='w-full aspect-video pt-[94px]'
         >
-        <source
-        src="https://lh3.googleusercontent.com/86KYU3DAPqrlj7weZ8PdUEKpXwZQb7aptCuYAF6G1Sk6aQeRt1SyZ_ttsnjMNKYMFcsBi1Mh9C9a3awlencEorybw_K0yzIpadGa34rnRHGh1fUvAXqL-mk19nZWVl5t3A=w1280"
-        type="video/mp4"
-        />
-      </video> */}
+          <source src='/reel.mp4' type='video/mp4' />
+        </video>
+        {/* <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> */}
         {/* <img src={gif} className='min-w-[500px]' /> */}
-        <Logo size={600} />
+        {/* <Logo size={600} /> */}
       </SectionContainer>
     </Section>
   );
