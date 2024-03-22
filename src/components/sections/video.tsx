@@ -1,6 +1,6 @@
 // import video from "../assets/sounds_super.mp4";
 // import gif from '../../assets/sounds_super.gif';
-import Logo from '../Logo';
+// import Logo from '../Logo';
 import Section from '../Section';
 import SectionContainer from '../SectionContainer';
 
