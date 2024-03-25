@@ -42,7 +42,7 @@ const AboutUs = () => {
             people. That's why we always start with a feeling when we create our
             content. We want our listeners to feel something when they listen to
             our work - whether it's laughter, sadness, excitement, or anything
-            in between.
+            inbetween.
           </p>
           <p>
             We believe that both podcast audio and social video are powerful and
@@ -52,7 +52,7 @@ const AboutUs = () => {
           <p>
             So, whether someone’s just discovering ‘The Pirate Ship Podcast with
             Tom Kerridge and Chris Stark’ during their walk to work, or taking a
-            backstage tour of Strictly with Joe Sugg on Tik-Tok before bed…our
+            backstage tour of Strictly with Joe Sugg on TikTok before bed…our
             audience is always part of the story.
           </p>
         </div>

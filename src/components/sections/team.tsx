@@ -45,7 +45,7 @@ const Team = () => {
                 Sounds; working with other production companies to deliver music
                 podcasts to millions.
               </p>
-              <p>achievements:</p>
+              <p>Achievements include:</p>
               <ul role='list'>
                 <li>
                   Winner of New York Radio Festivals Grand Award and Gold Award
@@ -58,7 +58,7 @@ const Team = () => {
                 </li>
                 <li>
                   Productions featured in The New York Times, The Sunday Times,
-                  The Guardian, DJ Magazine and Wired{' '}
+                  The Guardian, DJ Magazine and Wired
                 </li>
               </ul>
             </div>

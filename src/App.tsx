@@ -10,7 +10,7 @@ const App = () => {
   return (
     <main className='min-h-screen  bg-gradient-to-r text-black flex flex-col w-full items-center overflow-hidden text-lg'>
       <Menu />
-      <Video h-full />
+      <Video />
       <AboutUs />
       <Work />
       <Services />

@@ -16,12 +16,11 @@ const Section: FC<SectionProps> = ({
   return (
     <div
       id={id}
-      className={`${
-        fullHeight && `h-screen `
-      }flex flex-col justify-center items-center w-full px-2.5 py-32 md:px-5 ${
-        secondaryColor && `bg-[#32BCE7]`
-      }`}
-      style={{ display: 'flex', justifyContent: 'center' }}
+      className={`
+      flex flex-col justify-center items-center w-full px-2.5 py-32 md:px-5 
+      
+      ${fullHeight && `h-screen `} 
+      ${secondaryColor && `bg-[#32BCE7]`}`}
     >
       {children}
     </div>
