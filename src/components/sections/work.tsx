@@ -66,7 +66,7 @@ const Work = () => {
           Strictly Podcast Cover / Pirate Ship Podcast Cover / Ibiza cover /
           britpop cover
         </p> */}
-          <p className='mt-3'>Some of our other happy customers…</p>
+          <p className='mt-3'>Some of our happy customers…</p>
 
           <div className='flex justify-center'>
             <div className='flex flex-wrap justify-center w-full '>
