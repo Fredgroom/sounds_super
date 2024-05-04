@@ -3,6 +3,7 @@ import LogoSquare from './LogoSquare';
 
 interface LogoProps {
   size?: number;
+  noText?: boolean;
 }
 
 const Logo: FC<LogoProps> = ({ size = 300 }) => {
@@ -23,18 +24,15 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
   }, []);
 
   const ifSmallHeight = () => {
-    // if (windowSize.height < windowSize.width) {
-    //   windowSize.height < size / Math.sqrt(2) &&
-    //     setFinalSize(windowSize.height / Math.sqrt(2));
-    // } else {
     let potSize = windowSize.width / Math.sqrt(2.5);
-    windowSize.width <= 425
+    size
+      ? setFinalSize(size)
+      : windowSize.width <= 425
       ? setFinalSize(windowSize.width * 0.7)
       : windowSize.width <= 1152 && potSize < 400
       ? setFinalSize(windowSize.width / Math.sqrt(2.5))
       : setFinalSize(400);
   };
-  // };
 
   useEffect(() => {
     ifSmallHeight();

@@ -19,6 +19,88 @@ h4,
 h5,
 h6,
 p {
-  margin-bottom: 1rem;
+  margin: 16px 0;
   max-width: 770px;
+}
+
+h1 {
+  font-size: 2.441rem;
+  line-height: 3rem;
+  margin: 1rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 3.052rem;
+    line-height: 3.5rem;
+    margin: 1.25rem 0;
+  }
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+  margin: 0.8rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2.441rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+  }
+}
+
+h3 {
+  font-size: 1.563rem;
+  line-height: 2rem;
+  margin: 0.6rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.953rem;
+    line-height: 2.5rem;
+    margin: 0.8rem 0;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 0.5rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.563rem;
+    line-height: 2rem;
+    margin: 0.6rem 0;
+  }
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0.4rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+  }
+}
+
+h6 {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 0.3rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0.4rem 0;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin: 1rem 0;
+
+  @media screen and (min-width: 600px) {
+    font-weight: 400;
+  }
 }

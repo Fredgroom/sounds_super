@@ -6,7 +6,7 @@
 
 const Video = () => {
   return (
-    <div id='video' className='w-full flex flex-col items-center '>
+    <div id='video' className='w-full m-h-full flex flex-col items-center '>
       <div className='w-full h-[76px] md:h-[96px]'></div>
       {/* <Section
        id='video'
@@ -27,7 +27,7 @@ const Video = () => {
       <iframe
         // src='https://player.vimeo.com/video/926228437?h=4e68b524b0&autoplay=1&loop=1&title=0&byline=0&portrait=0'
         src='https://player.vimeo.com/video/926228437?background=1'
-        className='aspect-square w-full max-h-[976px] my-10'
+        className='aspect-square w-full h-full max-h-[88vh] mb-10'
         allow='autoplay; background'
       ></iframe>
       {/* <video

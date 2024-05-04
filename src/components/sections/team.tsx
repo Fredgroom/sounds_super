@@ -1,6 +1,26 @@
 import founderImage from '../../assets/founder.jpg';
 import Section from '../Section';
 import SectionContainer from '../SectionContainer';
+import StaticLogo from '../StaticLogo';
+
+const Bullet = () => {
+  return (
+    <div
+      style={{
+        // paddingRight: '1em',
+        backgroundColor: 'white',
+        display: 'flex',
+        // alignItems: 'center',
+        width: '32px',
+        padding: '20px 4px',
+        height: '100%',
+        // height: '40px',
+      }}
+    >
+      <StaticLogo size={20} />
+    </div>
+  );
+};
 
 const Team = () => {
   return (
@@ -41,26 +61,79 @@ const Team = () => {
                 Strictly Come Dancing Podcast for BBC Studios, The Pirate Ship
                 Podcast with Tom Kerridge and Chris Stark and multiple
                 documentaries for BBC Radio. In addition to his work in
-                podcasting, Jonathan is also a commissioning producer for BBC
+                podcasting, Jonathan was also a commissioning producer for BBC
                 Sounds; working with other production companies to deliver music
                 podcasts to millions.
               </p>
               <p>Achievements include:</p>
-              <ul role='list'>
-                <li>
+              <div
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  gridTemplateColumns: 'auto 1fr',
+                  margin: '16px 0',
+                }}
+              >
+                <Bullet />
+                <p>
                   Winner of New York Radio Festivals Grand Award and Gold Award
                   2018
-                </li>
-                <li>Winner of 6 New York Radio Festivals Awards - 2016</li>
-                <li>Winner of Aria Radio Moment of the year</li>
-                <li>
+                </p>
+              </div>
+              <div
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  gridTemplateColumns: 'auto 1fr',
+                }}
+              >
+                <Bullet />
+                <p>Winner of 6 New York Radio Festivals Awards - 2016</p>
+              </div>
+              <div
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  gridTemplateColumns: 'auto 1fr',
+                }}
+              >
+                <Bullet />
+                <p>Winner of Aria Radio Moment of the year</p>
+              </div>
+              <div
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  gridTemplateColumns: 'auto 1fr',
+                }}
+              >
+                <Bullet />
+                <p>
                   Shortlisted for BBC Radio and Music ‘Moment of the Year’ Award
-                </li>
-                <li>
+                </p>
+              </div>
+              <div
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  gridTemplateColumns: 'auto 1fr',
+                }}
+              >
+                <Bullet />
+                <p>
                   Productions featured in The New York Times, The Sunday Times,
                   The Guardian, DJ Magazine and Wired
-                </li>
-              </ul>
+                </p>
+              </div>
+              {/* <p>Winner of 6 New York Radio Festivals Awards - 2016</p>
+              <p>Winner of Aria Radio Moment of the year</p>
+              <p>
+                Shortlisted for BBC Radio and Music ‘Moment of the Year’ Award
+              </p>
+              <p>
+                Productions featured in The New York Times, The Sunday Times,
+                The Guardian, DJ Magazine and Wired
+              </p> */}
             </div>
           </div>
         </div>

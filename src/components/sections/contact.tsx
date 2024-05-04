@@ -12,7 +12,7 @@ const Contact = () => {
           <h1 className='text-4xl break-words w-full max-w-full'>
             Got an exciting project in mind? We're all ears{' '}
             <span className='text-red font-extrabold text-4xl break-words w-full max-w-full'>
-              hello@soundssuper.co
+              jonathan@soundssuper.co
             </span>
           </h1>
         </div>
