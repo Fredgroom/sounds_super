@@ -8,7 +8,7 @@ interface NavLinkProps {
 const NavLink: FC<NavLinkProps> = ({ href, children, onClick }) => {
   return (
     <a
-      className='px-2 py-2 text-red font-extrabold cursor-pointer hover:bg-red hover:text-white w-full'
+      className='px-2 py-2 text-red font-extrabold cursor-pointer hover:bg-red hover:text-white w-full text-nowrap'
       onClick={onClick}
       href={`${href}`}
     >
