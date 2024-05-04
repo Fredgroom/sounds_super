@@ -1,6 +1,5 @@
 import { FC, useEffect, useRef, useState } from 'react';
 import Nav from '../Nav';
-import StaticLogo from '../StaticLogo';
 
 const MenuLine: FC = () => {
   return (

@@ -12,60 +12,17 @@ import logo_9 from '../../assets/09_slate.png';
 
 const Work = () => {
   return (
-    <Section
-      id='work'
-      // className='px-10 min-h-screen flex flex-col justify-center items-center w-full'
-    >
-      <SectionContainer
-      // className='w-full max-w-6xl'
-      >
+    <Section id='work'>
+      <SectionContainer>
         <div className='max-w-[770px]'>
           <h1 className='text-red text-4xl font-extrabold underline decoration-[#32BCE7] decoration-500 decoration-4'>
             Work
           </h1>
           <p>
             We focus on creating content that is engaging and entertaining. We
-            want our listeners to be hooked from the start and to keep listening
+            want listeners to be hooked from the start and to keep listening
             until the end.
           </p>
-          {/* <h2 className='mb-3 '>Currently on rotation….</h2>
-        <iframe
-        style={{ borderRadius: '12px' }}
-        src='https://open.spotify.com/embed/episode/1IquyyXG3QjqNiAF399zeQ?utm_source=generator&theme=0'
-        width='100%'
-        height='152'
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        loading='lazy'
-        ></iframe>
-        <br />
-        <iframe
-        style={{ borderRadius: '12px' }}
-        src='https://open.spotify.com/embed/episode/6NPDc7MyO1aT1o3uqWZ8gB?utm_source=generator&theme=0'
-        width='100%'
-        height='152'
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        loading='lazy'
-      ></iframe> */}
-          {/* <br /> */}
-          {/* <p >Ibiza cover</p> */}
-          {/* <br /> */}
-          {/* <iframe
-          allow='autoplay *; encrypted-media *; fullscreen *; clipboard-write'
-          height='175'
-          width='100%'
-          style={{
-            width: '100%',
-            maxWidth: '660px',
-            overflow: 'hidden',
-            borderRadius: '10px',
-          }}
-          sandbox='allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation'
-          src='https://embed.podcasts.apple.com/us/podcast/the-britpop-show-collaborations/id1547070771?i=1000643480931'
-        ></iframe> */}
-          {/* <p >
-          Strictly Podcast Cover / Pirate Ship Podcast Cover / Ibiza cover /
-          britpop cover
-        </p> */}
           <p className='mt-3'>Some of our happy customers…</p>
 
           <div className='flex justify-center'>
