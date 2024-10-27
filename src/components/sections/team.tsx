@@ -6,16 +6,16 @@ import StaticLogo from '../StaticLogo';
 const Bullet = () => {
   return (
     <div
-      style={{
-        // paddingRight: '1em',
-        backgroundColor: 'white',
-        display: 'flex',
-        // alignItems: 'center',
-        width: '32px',
-        padding: '20px 4px',
-        height: '100%',
-        // height: '40px',
-      }}
+      className='bg-white flex w-[32px] px-[4px] py-[20px] h-full'
+      style={
+        {
+          // backgroundColor: 'white',
+          // display: 'flex',
+          // width: '32px',
+          // padding: '20px 4px',
+          // height: '100%',
+        }
+      }
     >
       <StaticLogo size={20} />
     </div>
@@ -42,6 +42,7 @@ const Team = () => {
                 <img
                   className='w-full rounded-full ring-8 ring-[#32BCE7] ring-offset-8 mb-5 self-center'
                   src={founderImage}
+                  alt='Man smilingly warmly, wearing a navy shirt, looking into camera'
                 ></img>
               </div>
             </div>

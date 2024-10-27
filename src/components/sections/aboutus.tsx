@@ -9,7 +9,6 @@ const AboutUs = () => {
           <h1 className='text-red text-4xl font-extrabold mb-3 underline decoration-[#32BCE7] decoration-500 decoration-4'>
             About Us
           </h1>
-          <img />
           <p>
             Sounds Super specialise in producing entertainment podcasts and
             vertical video to support and amplify your business and brand.

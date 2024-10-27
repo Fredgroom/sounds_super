@@ -30,45 +30,50 @@ const Work = () => {
               <img
                 src={logo_1}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='BBC studios logo'
               />
               <img
                 src={logo_2}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='bbc sounds logo'
               />
               <img
                 src={logo_3}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='bbc radio 1 logo'
               />
               <img
                 src={logo_4}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='bbc radio 2 logo'
               />
               <img
                 src={logo_5}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='bbc radio 6 music logo'
               />
               <img
                 src={logo_6}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='nokia logo'
               />
               <img
                 src={logo_7}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='prx logo'
               />
               <img
                 src={logo_8}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='Tom Kerridge logo'
               />
               <img
                 src={logo_9}
                 className='w-[90px] md:w-[175px] lg:w-[200px]'
+                alt='slate logo'
               />
             </div>
           </div>
-          {/* <p >
-          BBC Studios / Tom Kerridge / Nokia / Brand pilot / SBAI / BBC Sounds /
-          Radio 1 / Radio 2 / 6 Music / american ones tbc
-        </p> */}
         </div>
       </SectionContainer>
     </Section>

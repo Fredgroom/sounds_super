@@ -47,6 +47,7 @@ const StaticLogo: FC<LogoProps> = ({ size = 32 }) => {
         width: size / 1.75,
         height: size,
         backgroundColor: 'transparent',
+        zIndex: 1,
       }}
     >
       <div
@@ -55,6 +56,7 @@ const StaticLogo: FC<LogoProps> = ({ size = 32 }) => {
           width: '100%',
           height: '100%',
           background: 'transparent',
+          zIndex: 1,
         }}
       >
         <LogoSquare backgroundColor='#E11556' number={1} size={finalSize} />

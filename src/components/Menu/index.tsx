@@ -77,11 +77,11 @@ const Menu = () => {
     setShowMenu(false);
   };
   return (
-    <div className='fixed w-full'>
-      <div className=' bg-blue w-full h-[76px] p-2 md:p-4 flex justify-center z-10 border-solid border-b-4 border-red'>
+    <div className='fixed w-full' style={{ zIndex: 9999 }}>
+      <div className=' bg-blue w-full h-[76px] p-2 md:p-4 flex justify-center z-50 border-solid border-b-4 border-red'>
         <div className='w-full bg-transparent max-w-[1000px] flex justify-between align-center'>
           <div className='bg-blue flex items-center '>
-            <h3 className='bg-blue text-white font-bold text-nowrap m-0 text-2xl '>
+            <h3 className='bg-blue text-white font-bold text-nowrap m-0 text-4xl '>
               Sounds Super
             </h3>
           </div>
