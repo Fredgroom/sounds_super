@@ -24,22 +24,22 @@ interface NavProps {
 const Nav = ({ onClick }: NavProps) => {
   return (
     <nav className='flex flex-col md:flex-row '>
-      <NavLink onClick={onClick} href='#video'>
+      <NavLink onClick={onClick} href='#video' aria-label='go to home'>
         home
       </NavLink>
-      <NavLink onClick={onClick} href='#about-us'>
+      <NavLink onClick={onClick} href='#about-us' aria-label='go to about us'>
         about us
       </NavLink>
-      <NavLink onClick={onClick} href='#work'>
+      <NavLink onClick={onClick} href='#work' aria-label='go to work'>
         work
       </NavLink>
-      <NavLink onClick={onClick} href='#services'>
+      <NavLink onClick={onClick} href='#services' aria-label='go to services'>
         services
       </NavLink>
-      <NavLink onClick={onClick} href='#team'>
+      <NavLink onClick={onClick} href='#team' aria-label='go to team'>
         team
       </NavLink>
-      <NavLink onClick={onClick} href='#contact'>
+      <NavLink onClick={onClick} href='#contact' aria-label='go to contact'>
         Contact
       </NavLink>
     </nav>

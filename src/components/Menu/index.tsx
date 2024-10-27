@@ -2,15 +2,7 @@ import { FC, useEffect, useRef, useState } from 'react';
 import Nav from '../Nav';
 
 const MenuLine: FC = () => {
-  return (
-    <div
-      style={{
-        width: '24px',
-        height: '3px',
-      }}
-      className='bg-red w-24 h-3'
-    />
-  );
+  return <div className='bg-red w-[24px] h-[3px]' />;
 };
 
 interface MenuOpenProps {
@@ -43,7 +35,6 @@ const MenuClose: FC<MenuCloseProps> = ({ func }) => {
     >
       <div
         className={`flex justify-center items-center relative  h-[26px] w-[24px] p-3 `}
-        // className={`flex justify-center self-end align-center relative cursor-pointer h-[26px] w-[24px]`}
       >
         <div
           className={`absolute top-[12px] w-[24px] h-[3px] bg-red rotate-[45deg]`}

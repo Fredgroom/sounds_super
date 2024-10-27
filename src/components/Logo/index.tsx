@@ -40,33 +40,14 @@ const Logo: FC<LogoProps> = ({ size = 300 }) => {
 
   return (
     <div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            position: 'relative',
-          }}
-        >
+      <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center relative'>
           <LogoSquare backgroundColor='#E11556' number={1} size={finalSize} />
           <LogoSquare backgroundColor='#E11556' number={2} size={finalSize} />
           <LogoSquare backgroundColor='#32BCE7' number={3} size={finalSize} />
           <LogoSquare backgroundColor='#32BCE7' number={4} size={finalSize} />
         </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
+        <div className='flex justify-center items-center'>
           <h1
             style={{
               width: finalSize / 1.8,

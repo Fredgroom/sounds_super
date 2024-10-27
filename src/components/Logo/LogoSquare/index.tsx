@@ -36,7 +36,6 @@ const LogoSquare: FC<LogoSquareProps> = ({
         opacity: '.95',
         rotate: '45deg',
         mixBlendMode: 'multiply',
-        // zIndex: -1,
       }}
     />
   );

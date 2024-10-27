@@ -5,18 +5,7 @@ import StaticLogo from '../StaticLogo';
 
 const Bullet = () => {
   return (
-    <div
-      className='bg-white flex w-[32px] px-[4px] py-[20px] h-full'
-      style={
-        {
-          // backgroundColor: 'white',
-          // display: 'flex',
-          // width: '32px',
-          // padding: '20px 4px',
-          // height: '100%',
-        }
-      }
-    >
+    <div className='bg-white flex w-[32px] px-[4px] py-[20px] h-full'>
       <StaticLogo size={20} />
     </div>
   );
@@ -67,59 +56,28 @@ const Team = () => {
                 podcasts to millions.
               </p>
               <p>Achievements include:</p>
-              <div
-                style={{
-                  display: 'grid',
-                  alignItems: 'center',
-                  gridTemplateColumns: 'auto 1fr',
-                  margin: '16px 0',
-                }}
-              >
+              <div className='flex'>
                 <Bullet />
                 <p>
                   Winner of New York Radio Festivals Grand Award and Gold Award
                   2018
                 </p>
               </div>
-              <div
-                style={{
-                  display: 'grid',
-                  alignItems: 'center',
-                  gridTemplateColumns: 'auto 1fr',
-                }}
-              >
+              <div className='flex'>
                 <Bullet />
                 <p>Winner of 6 New York Radio Festivals Awards - 2016</p>
               </div>
-              <div
-                style={{
-                  display: 'grid',
-                  alignItems: 'center',
-                  gridTemplateColumns: 'auto 1fr',
-                }}
-              >
+              <div className='flex'>
                 <Bullet />
                 <p>Winner of Aria Radio Moment of the year</p>
               </div>
-              <div
-                style={{
-                  display: 'grid',
-                  alignItems: 'center',
-                  gridTemplateColumns: 'auto 1fr',
-                }}
-              >
+              <div className='flex'>
                 <Bullet />
                 <p>
                   Shortlisted for BBC Radio and Music ‘Moment of the Year’ Award
                 </p>
               </div>
-              <div
-                style={{
-                  display: 'grid',
-                  alignItems: 'center',
-                  gridTemplateColumns: 'auto 1fr',
-                }}
-              >
+              <div className='flex'>
                 <Bullet />
                 <p>
                   Productions featured in The New York Times, The Sunday Times,
