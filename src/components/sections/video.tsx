@@ -13,6 +13,7 @@ const Video = () => {
         ref={videoRef}
         controls={false}
         autoPlay
+        playsInline
         muted
         loop
         className='max-h-full'

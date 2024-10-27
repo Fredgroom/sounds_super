@@ -5,7 +5,7 @@ import StaticLogo from '../StaticLogo';
 
 const Bullet = () => {
   return (
-    <div className='bg-white flex w-[32px] px-[4px] py-[20px] h-full'>
+    <div className='bg-white flex w-[32px] pr-[10px] py-[20px] h-full'>
       <StaticLogo size={20} />
     </div>
   );
